@@ -1,12 +1,9 @@
 """
-Write a program that prints the numbers from 1 to 20. But for multiples of three, print 'Fizz'
-instead of the number and for the multiples of five print 'Buzz'.
-For numbers which are multiples of both three and five print 'FizzBuzz'.
+Emululats a small car with random effects
 """
 from random import randint
 import time
 import pafy
-import vlc
 #define car starting sound
 url = "https://www.youtube.com/watch?v=N_5MMzx5rOs"
 video = pafy.new(url)
@@ -47,7 +44,7 @@ class car(object):
         time.sleep(2)
         player.stop()
         if music == 'Yes':
-              player.set_media(Car_drive)
+            player.set_media(Car_drive)
             player.play()
         for i in range(distance):
             event = randint(0,100)
@@ -63,7 +60,7 @@ class car(object):
         player.stop()
 
 
-Lexus = car("Lexus", 120,0)
+Lexus = car("Lexus", 120, 0)
 print(Lexus.mileage)
 print(Lexus.mileage)
 print("Welcome to the care simulator, we will begin with determining what car of type you drive")
@@ -73,7 +70,8 @@ print("Great! Now what is it top speed?")
 car_speed = input()
 print("Finally, how many kilometers can your car drive on one full tank?")
 car_mileage = input()
-print("Awesome! Your car is of model {} with a topspeed of {} and a radius of {}.".format( car_model,car_speed,car_mileage))
+print("Awesome! Your car is of model {} with a topspeed of {} and a radius of {}.".format(car_model, car_speed,
+                                                                                          car_mileage))
 time.sleep(1)
 print("Now that we have determined what kind of car you are driving we will hit the road!")
 print("How far do you want to go?")
